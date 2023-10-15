@@ -1,3 +1,4 @@
+/* css font : work sans */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
 *{
@@ -7,4 +8,25 @@
 header{
     padding: 50px 240px;
     background-color: #FF900E1A;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title h2{
+    color: #131313;
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+.nav-content > ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.nav-content ul li{
+    list-style: none;
+    color: #424242;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
