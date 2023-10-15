@@ -4,7 +4,13 @@
 *{
     font-family: 'Work Sans', sans-serif;
 }
-
+h2{
+    color: ;
+}
+.text-gray{
+    color: #727272;
+}
+/* header */
 header{
     padding: 50px 240px;
     background-color: #FF900E1A;
@@ -21,7 +27,7 @@ nav{
 }
 .nav-content > ul{
     display: flex;
-    gap: 30px;
+    
     align-items: center;
 }
 .nav-content ul li{
@@ -29,4 +35,100 @@ nav{
     color: #424242;
     font-weight: 500;
     font-size: 1.2rem;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+/* banner */
+.banner{
+    margin-top: 7rem;
+    text-align: center;    
+}
+.banner-discription{
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+.banner-discription h2{
+    font-size: 4rem;
+    font-weight: 700;
+    
+}
+.banner-img img{
+    width: 100%;
+    
+}
+.banner-btn{
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 24px;
+    border: 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 50px 0;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* features-section */
+.features-section{
+    margin: 6rem 0;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+.features-section button{
+    margin-top: 1.8rem;
+}
+.features-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px ;
+}
+
+
+/* responsive with media querry */
+
+/* mobile device */
+@media screen and (max-width:576px) {
+    header{
+        padding: 50px 10px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .nav-content ul li{
+      margin-right: 15px;
+    }
+    .banner {
+        margin-top: 3rem;;
+    }
+
+    /*  */
+    .features-section{
+        padding: 0px 20px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .features-img{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* medium devicce */
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav{
+        flex-direction: column;
+    }
+    header{
+        padding: 50px 120px;
+    }
+
+    .features-section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
 }
